@@ -1,0 +1,170 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/img/banner2.jpg) no-repeat center center/ cover fixed;
+    padding: 30px;
+}
+#home .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+}
+#home .container h1
+{
+    text-align: center;
+    color: wheat;
+    font-size: 60px;
+    font-weight: 500;
+
+}
+#home .container p
+{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+button,
+#home .container a
+{
+    height: 50px;
+    width: 120px;
+    background-color: transparent;
+    border: solid 1px wheat;
+    color: wheat;
+    margin-top: 50px;
+    margin-left: 70%;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+button:hover,
+#home .container a:hover
+{
+    background: teal;
+    transition: 0.6s;
+    color: #fff;
+}
+button:active,
+#home .container a:active
+{
+    transform: scale(1.2);
+}
+#workspace
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/img/banner.jpg) no-repeat center center/ cover fixed;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+#workspace .main-heading
+{
+    background-color: rgba(17, 17, 17, 0.603);
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 380px;
+}
+#workspace .main-heading:hover
+{
+    box-shadow: 0 0 25px aqua;
+    transition: 0.34s;
+}
+#workspace .main-heading h1
+{
+    font-weight: 500;
+    color: aqua;
+    font-size: 15px;
+    text-align: center;
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main button
+{
+    margin-top: 10px;
+    height: 30px;
+    font-size: 15px;
+}
+textarea
+{
+    height: 150px;
+    width: 400px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    background-color: rgba(17, 17, 17, 0.836);
+    color: aqua;
+    border: solid 1px wheat;
+    border-radius: 7px;
+}
+textarea:hover
+{
+    border: solid 1px aqua;
+    box-shadow: 0 3px 25px aqua;
+    transition: 0.5s;
+}
+input
+{
+    margin: 10px 4px;
+    height: 20px;
+    width: 20px;
+    color: aqua;
+}
+label
+{
+    color: wheat;
+    font-weight: 500;
+    font-size: 20px;
+}
+label:hover
+{
+    color: teal;
+}
+.audioContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a
+{
+    text-decoration: none;
+    font-size: 40px;
+    color: #111;
+    margin-left: 12px;
+}
+a:hover
+{
+    color: aqua;
+}
+
+audio:hover
+{
+    box-shadow: 0 3px 25px aqua;
+    transition: 0.5s;
+}

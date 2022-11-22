@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Voice</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- fa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <h1>Text to Voice</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit reiciendis mollitia sit! Suscipit in et illo, corporis perferendis temporibus optio unde ab, illum quae, porro qui quis quod repudiandae expedita!</p>
+            <a href="#workspace">Start Now</a>
+        </div>
+    </section>
+    <section id="workspace">
+        <div class="main-heading">
+            <h1>Text to Voice</h1>
+        </div>
+        <div class="main">
+            <form action="/text_to_voice" method="post">
+                <textarea placeholder="your text here..." name="text" required></textarea> <br>
+                <button type="submit"> Convert </button>
+            </form>           
+        </div>
+        <div class="audioContainer">
+            <audio controls>
+                <source src="<%= voice %>" type="audio/mp3")">
+            </audio>
+            <a href="/voice/Voice.mp3" download title="Download audio file"><i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>

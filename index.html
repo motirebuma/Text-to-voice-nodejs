@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Voice</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <h1>Text to Voice</h1>
+            <p>Text to voice</p>
+            <a href="#workspace">Start Now</a>
+        </div>
+    </section>
+    <section id="workspace">
+        <div class="main-heading">
+            <h1>Text to Voice</h1>
+        </div>
+        <div class="main">
+            <form action="/text_to_voice" method="post">
+                <textarea placeholder="your text here..." name="text" required></textarea> <br>
+                <input type="radio" id="male" name="radio" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="radio" required>
+                <label for="female">Female</label>
+                <button type="submit">Convert</button>
+            </form>           
+        </div>
+    </section>
+</body>
+</html>
