@@ -118,7 +118,7 @@ textarea
     padding: 10px;
     background-color: rgba(17, 17, 17, 0.836);
     color: aqua;
-    border: solid 1px wheat;
+    border: solid 1px teal;
     border-radius: 7px;
 }
 textarea:hover
