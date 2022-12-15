@@ -39,6 +39,7 @@ app.post('/text_to_voice', (req, res) => {
 
 
 //listener
-app.listen(3000, ()=> {
-    console.log("Server started on port 3000.")
-});
+const port = process.env.PORT || 9001
+app.listen(port, function(){
+    console.log("Server started");
+}); 

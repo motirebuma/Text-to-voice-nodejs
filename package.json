@@ -12,7 +12,7 @@
   "description": "text to voice",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Moti Rebuma",
   "license": "ISC"
