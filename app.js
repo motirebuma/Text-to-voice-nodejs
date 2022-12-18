@@ -1,9 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const fs = require('fs');
-// reload
-// const reload = require('reload')
-// text converter npm
+
+//google text to speech module gTTS
 const gTTS = require('gtts');
 
 const app = express();

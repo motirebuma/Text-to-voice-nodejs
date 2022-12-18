@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *
 {
     margin: 0;
     padding: 0;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
 }
 #home
 {
@@ -24,10 +30,9 @@
 #home .container h1
 {
     text-align: center;
-    color: wheat;
+    color: whitesmoke;
     font-size: 60px;
     font-weight: 500;
-
 }
 #home .container p
 {
@@ -39,11 +44,11 @@
 button,
 #home .container a
 {
-    height: 50px;
+    height: 45px;
     width: 120px;
     background-color: transparent;
-    border: solid 1px wheat;
-    color: wheat;
+    border: solid 1px white;
+    color: white;
     margin-top: 50px;
     margin-left: 70%;
     font-size: 18px;
@@ -57,7 +62,7 @@ button,
 button:hover,
 #home .container a:hover
 {
-    background: teal;
+    background: #47B5FF;
     transition: 0.6s;
     color: #fff;
 }
@@ -71,7 +76,7 @@ button:active,
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 85vh;
     background: url(/img/banner.jpg) no-repeat center center/ cover fixed;
     padding: 30px;
     flex-direction: column;
@@ -86,13 +91,13 @@ button:active,
 }
 #workspace .main-heading:hover
 {
-    box-shadow: 0 0 25px aqua;
+    box-shadow: 0 0 25px #47B5FF;
     transition: 0.34s;
 }
 #workspace .main-heading h1
 {
     font-weight: 500;
-    color: aqua;
+    color: #47B5FF;
     font-size: 15px;
     text-align: center;
 }
@@ -117,39 +122,21 @@ textarea
     resize: none;
     padding: 10px;
     background-color: rgba(17, 17, 17, 0.836);
-    color: aqua;
-    border: solid 1px teal;
+    color: #47B5FF;
+    border: solid 1px #47B5FF;
     border-radius: 7px;
 }
 textarea:hover
 {
-    border: solid 1px aqua;
-    box-shadow: 0 3px 25px aqua;
+    border: solid 1px #47B5FF;
+    box-shadow: 0 3px 25px #47B5FF;
     transition: 0.5s;
-}
-input
-{
-    margin: 10px 4px;
-    height: 20px;
-    width: 20px;
-    color: aqua;
-}
-label
-{
-    color: wheat;
-    font-weight: 500;
-    font-size: 20px;
-}
-label:hover
-{
-    color: teal;
 }
 .audioContainer
 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 a
 {
@@ -160,11 +147,91 @@ a
 }
 a:hover
 {
-    color: aqua;
+    color: #47B5FF;
 }
 
 audio:hover
 {
-    box-shadow: 0 3px 25px aqua;
+    box-shadow: 0 3px 25px #47B5FF;
     transition: 0.5s;
+}
+/* footer */
+footer
+{
+    display: absolute;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+    background-color: #393E46;
+    border-top: solid 2px #C3F8FF;
+}
+footer .footerBox .data
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10px;
+}
+footer .footerBox .data a i
+{
+    font-size: 30px;
+    justify-content: space-between;
+    color: #47B5FF;
+}
+footer .footerBox .data a i:hover
+{
+    transform: scale(1.12);
+    color: #EB6440;
+    transition: 0.6s;
+}
+
+@media (max-width: 750px) {
+    #home .container h1
+    {
+        font-size: 40px;
+    }
+    #workspace .main-heading
+    {
+        width: 280px;
+    }
+    textarea
+    {
+        height: 200px;
+        width: 280px;
+    }
+    .main button /*convert*/
+    {
+        margin-left: 6px;
+    }
+    footer .footerBox .data
+    {
+        padding: 3px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    #home .container a{
+        height: 30px;
+    }
+    #home .container h1
+    {
+        font-size: 30px;
+    }
+    #workspace .main-heading
+    {
+        width: 230px;
+    }
+    textarea
+    {
+        height: 180px;
+        width: 260px;
+    }
+    .main button /*convert*/
+    {
+        margin-left: 6px;
+    }
+    footer .footerBox .data
+    {
+        padding: 3px 0;
+    }
 }
